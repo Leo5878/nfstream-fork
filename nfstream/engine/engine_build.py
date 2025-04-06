@@ -164,6 +164,7 @@ with open(
     for to_replace in cdef_to_replace(NDPI_CDEF):
         NDPI_CDEF = NDPI_CDEF.replace(to_replace, "")
 
+    print("debug NDPI_CDEF", NDPI_CDEF)
     NDPI_MODULE_STRUCT_CDEF = NDPI_CDEF.split("//CFFI.NDPI_MODULE_STRUCT")[1]
 
 with open(
